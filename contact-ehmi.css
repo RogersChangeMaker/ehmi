@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.images{
+    display: flex;
+    gap: 30px;
+}
+.contact-body{
+    margin: 20px;
+    padding: 30px;
+}
+.contact-text{
+    padding: 30px;
+}
+.ehmi{
+    color: red;
+}
+.nav-home{
+    margin: 40px;
+    
+
+
+}
