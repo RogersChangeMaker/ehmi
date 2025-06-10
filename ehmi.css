@@ -1,127 +1,186 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: sans-serif;
-}
-
-.body-section{
-    margin: 20px;
+body {
+  font-family: sans-serif;
 }
 
-.header-nav{
-    display:flex ;
-    gap: 30px;
-    height: 100px;
-    background-color: blueviolet;
-    color:white
+.body-section {
+  margin: 20px;
+  width: 100%;
+  overflow: hidden;
 }
-.text-head{
+
+.header-nav {
+  display: flex;
+  gap: 30px;
+  height: 110px;
+  width: 100%;
+  background-color: rgb(70, 32, 105);
+  color: white;
+  position: relative;
+}
+
+.img-logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.text-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  justify-content: space-around;
+  line-height: 1px;
+  margin-left: 120px;
+
+  a {
+    text-decoration: none;
+    /* this is to remove the underlines */
+    color: white;
+    font-size: 15px;
+    margin-left: 100px;
+   
+    
+  }
+
+  a:hover{
+    color:aqua
+  }
+}
+
+.texthead-searchbar{
     display: flex;
     
-    /* flex-basis: calc(70%/4); */
-    flex-wrap:wrap;
-    gap: 30px;
-    justify-content: space-around;
-}
-.text-head2{
-    /* align-items:end; */
-
+    justify-content: space-between;
+    gap: 200px;
+    padding: 20px 10px;
 }
 
-.header-social-media{
+.search-bar{
     display: flex;
-    gap: 20px;
-    text-align: right;
-    background-color: rgb(253, 124, 11);
-    
-}
-
-
-.main{
-    background-color: rgb(8, 235, 251);
-    padding: 20px;
-    flex: 1;
-    /* margin-bottom: 50px; */
-
-}
-.welcome-message{
-    width: 60%;
-    text-align: justify;
-}
-.word-for-the-year{
-    margin-top: 30px;
-    text-align: center;
-    color:red ;
-    
-}
-
-.footer-nav{
-    display: flex;
-    gap: 50px;
-    background-color: rgb(0, 255, 128);
-    text-align: center;
-}
-
-.section-main-nav{
-    display: flex;
-    /* flex-basis: 100px; */
-}
-.weekly-services{
-    margin-top: 50px;
-
-}
-.main-image-text{
-    display: flex;
-    gap: 30px;
-    margin-top: 30px;
-}
-.img-bible-study{
-    display: flex;
-    flex-basis: calc(95%/2);
-    flex-wrap: wrap;
-    gap:2%;
-    margin-bottom: 20px;
-    margin-top: 30px;
-}
-.little-lights{
-    margin: 30px;
-    text-align: center;
-}
-.img-little-lights{
-    display: flex;
-    gap: 30px;
-    align-content: center;
-    margin: 50px;
-}
-.textbody-little-lights{
-    display: flex;
-    padding: 30px;
-}
-.img-little-lights3-6{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.img-little-lights4-5{
-    display: flex;
-    gap: 20px;
-}
-.nextgen-youths{
-    margin: 30px;
-    text-align: center;
-}
-.img-nextgen1-2{
-    display: flex;
-    gap: 20px;
-}
-
-.logo-footer{
-    /* display: flex; */
-}
-
-.text-footer{
+    max-width: fit-content;
+    margin-left: 5px;
     align-items: center;
+    
+    ion-icon{
+        height: 40px;
+        width: 30px;
+        color: white;
+        border-radius: 10px;
+        border-left: none;
+        padding: 1% 1px;
+    }
+    
+    input{
+      width: 300px; 
+      height: 40px; 
+      border-radius: 10px;
+      font-size: 17PX;
+      padding: 2px 5px;
+      border-right: none;
+    }
+}
+
+.header-social-media {
+  display: flex;
+  gap: 20px;
+  text-align: right;
+  align-items: center;
+  margin-right: 15px;
+
+  ion-icon{
+    width: 30px;
+    height: 30px;
+  }
+  
+}
+.header-social-media>ion-icon:hover {
+    color: aqua;
+  }
+
+.main {
+  background-color: rgb(8, 235, 251);
+  padding: 20px;
+  flex: 1;
+  /* margin-bottom: 50px; */
+}
+.welcome-message {
+  width: 60%;
+  text-align: justify;
+}
+.word-for-the-year {
+  margin-top: 30px;
+  text-align: center;
+  color: red;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 50px;
+  background-color: rgb(0, 255, 128);
+  text-align: left;
+}
+
+.section-main-nav {
+  display: flex;
+  /* flex-basis: 100px; */
+}
+.weekly-services {
+  margin-top: 50px;
+}
+.main-image-text {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+.img-bible-study {
+  display: flex;
+  flex-basis: calc(95% / 2);
+  flex-wrap: wrap;
+  gap: 2%;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.little-lights {
+  margin: 30px;
+  text-align: center;
+}
+.img-little-lights {
+  display: flex;
+  gap: 30px;
+  align-content: center;
+  margin: 50px;
+}
+.textbody-little-lights {
+  display: flex;
+  padding: 30px;
+}
+.img-little-lights3-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.img-little-lights4-5 {
+  display: flex;
+  gap: 20px;
+}
+.nextgen-youths {
+  margin: 30px;
+  text-align: center;
+}
+.img-nextgen1-2 {
+  display: flex;
+  gap: 20px;
+}
+
+.logo-footer {
+  /* display: flex; */
+}
+
+.text-footer {
+  align-items: center;
 }
