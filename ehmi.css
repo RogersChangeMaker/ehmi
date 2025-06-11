@@ -23,10 +23,10 @@ body {
   position: relative;
 }
 
-.img-logo{
-    position: absolute;
-    top: 10px;
-    left: 10px;
+.img-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .text-head {
@@ -43,46 +43,57 @@ body {
     color: white;
     font-size: 15px;
     margin-left: 100px;
-   
-    
   }
 
-  a:hover{
-    color:aqua
+  a:hover {
+    color: aqua;
   }
 }
 
-.texthead-searchbar{
-    display: flex;
-    
-    justify-content: space-between;
-    gap: 200px;
-    padding: 20px 10px;
+.texthead-searchbar {
+  display: flex;
+
+  justify-content: space-between;
+  gap: 200px;
+  padding: 20px 10px;
 }
 
-.search-bar{
-    display: flex;
-    max-width: fit-content;
-    margin-left: 5px;
-    align-items: center;
-    
-    ion-icon{
-        height: 40px;
-        width: 30px;
-        color: white;
-        border-radius: 10px;
-        border-left: none;
-        padding: 1% 1px;
-    }
-    
-    input{
-      width: 300px; 
-      height: 40px; 
-      border-radius: 10px;
-      font-size: 17PX;
-      padding: 2px 5px;
-      border-right: none;
-    }
+.search-bar {
+  display: flex;
+  max-width: fit-content;
+  margin-left: 5px;
+  align-items: center;
+
+  ion-icon {
+    height: 40px;
+    width: 30px;
+    color: white;
+    border-radius: 10px;
+    border-left: none;
+    padding: 1% 1px;
+  }
+
+  input {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 17px;
+    padding: 2px 5px;
+    border-right: none;
+  }
+}
+
+.fbook {
+  color: blue;
+}
+.twitter{
+  color:skyblue
+}
+.igram{
+  color: orangered;
+}
+.ytube{
+  color: red;
 }
 
 .header-social-media {
@@ -92,15 +103,14 @@ body {
   align-items: center;
   margin-right: 15px;
 
-  ion-icon{
+  ion-icon {
     width: 30px;
     height: 30px;
   }
-  
 }
-.header-social-media>ion-icon:hover {
-    color: aqua;
-  }
+.header-social-media > ion-icon:hover {
+  color: aqua;
+}
 
 .main {
   background-color: rgb(8, 235, 251);
@@ -137,6 +147,11 @@ body {
   gap: 30px;
   margin-top: 30px;
 }
+
+.main-image-text >img{
+  object-fit: cover;
+}
+
 .img-bible-study {
   display: flex;
   flex-basis: calc(95% / 2);
